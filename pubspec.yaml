@@ -1,0 +1,65 @@
+name: flutter_authentication_example
+description: "Flutter Authentication"
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.12.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management & DI
+  flutter_riverpod: ^3.3.2
+  riverpod_annotation: ^4.0.3
+
+  # Networking & Serialization
+  http: ^1.2.1
+  freezed_annotation: ^3.1.0
+
+  # Functional Programming & Utilities
+  fpdart: ^1.2.0
+
+  # Local Auth
+  local_auth: ^3.0.2
+  local_auth_android: ^2.0.9
+  local_auth_darwin: ^2.0.3
+
+  # Local Storage
+  flutter_secure_storage: ^10.3.1
+  crypto: ^3.0.7
+
+  # Solution Auth
+  portone_flutter: ^1.0.3
+
+  # Device
+  app_settings: ^8.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+  # Code Generation
+  build_runner: ^2.15.0
+  riverpod_generator: ^4.0.4
+  freezed: ^3.2.5
+
+flutter:
+  uses-material-design: true

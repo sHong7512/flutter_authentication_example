@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:developer';
 
 import 'package:http/http.dart' as http;
 import 'package:riverpod_annotation/riverpod_annotation.dart';
@@ -59,9 +60,9 @@ class SolutionAuthViewModel extends _$SolutionAuthViewModel {
       print('sHong] 3. Headers :: ${response.headers}');
       try {
         final decodedBody = utf8.decode(response.bodyBytes);
-        print('sHong] 4. Body (UTF-8) :: $decodedBody');
+        log('4. Body (UTF-8) :: $decodedBody', name: 'sHong');
       } catch (decodeError) {
-        print('sHong] 4. Body (Raw) :: ${response.body}');
+        log('sHong] 4. Body (Raw) :: ${response.body}', name: 'sHong');
       }
       print('============================================================\n');
 
